@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.ContainerCentrado
+{
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  float: left;
+  max-width: 20%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+h1
+{
+  display: flex;
+  justify-content: center;
+}

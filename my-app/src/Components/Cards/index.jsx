@@ -1,18 +1,11 @@
-const Card = (props) => 
-{
-    return(
-        <div class="Centrar">
-        <div class="card">
-            <div class="card-header">
-                <p>{props.titulo}</p>
-            </div>
-            <div class="card-body">
-                <p>{props.cuerpo}</p>
-            </div>
-        </div>
-        </div>
-   )
-}
-
-
+const Card = ({ user }) => {
+    return (
+      <div className="card">
+        <img src={user.picture.large} alt={user.name.first} />
+        <h2>{user.name.first} {user.name.last}</h2>
+        <p>Email: <a href={"mailto:" + user.email}> {user.email}</a></p>
+        <p>Location: {user.location.city}, {user.location.country}</p>
+      </div>
+    );
+  }
 export default Card
